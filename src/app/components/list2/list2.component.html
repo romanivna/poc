@@ -1,0 +1,14 @@
+<app-search></app-search>
+
+<ng-template [appSearch]="items" [isCaseSensitive]="true" [listTemplate]="listTemplate" [emptyTemplate]="emptyTemplate">
+</ng-template>
+
+<ng-template #listTemplate let-item>
+  <app-item [text]="item">
+  </app-item>
+</ng-template>
+<ng-template #emptyTemplate>
+  <div>Not found</div>
+</ng-template>
+
+<button mat-button color="accent" (click)="apply()">Apply</button>

@@ -1,0 +1,14 @@
+<app-search></app-search>
+
+<ng-template [appSearch]="items" searchField="value" [listTemplate]="listTemplate" [emptyTemplate]="emptyTemplate">
+</ng-template>
+
+<ng-template #listTemplate let-item>
+  <app-item [text]="item.value"></app-item>
+</ng-template>
+<ng-template #emptyTemplate>
+  <div>
+    <mat-icon>search_off</mat-icon>
+  </div>
+</ng-template>
+

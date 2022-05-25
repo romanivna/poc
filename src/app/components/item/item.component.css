@@ -1,0 +1,12 @@
+mat-card {
+  margin-bottom: 8px;
+  height: 24px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+::ng-deep .item .mat-icon {
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+}

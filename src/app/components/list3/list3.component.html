@@ -1,0 +1,5 @@
+<div cdkDropList (cdkDropListDropped)="drop($event)">
+  <app-item *ngFor="let item of items" [text]="'list 2 element ' + item" cdkDrag>
+    <mat-icon>menu</mat-icon>
+  </app-item>
+</div>
